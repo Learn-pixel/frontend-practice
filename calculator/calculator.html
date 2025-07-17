@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1 style="font-size: 50px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: black; display:flex; justify-content: center  ;">Online Calculator</h1>
+    <div class="calculator-box">
+        <input id="display" readonly><br>
+        <div class="column" >
+            <button class="keys" id="k1" onclick="appendtodisplay('+')">+</button>
+            <button class="keys" id="k2" onclick="appendtodisplay('7')">7</button>
+            <button class="keys" id="k3" onclick="appendtodisplay('8')">8</button>
+            <button class="keys" id="k4" onclick="appendtodisplay('9')">9</button>
+        </div>
+        <div class="column" >
+            <button class="keys" id="k1" onclick="appendtodisplay('-')">-</button>
+            <button class="keys" id="k2" onclick="appendtodisplay('4')">4</button>
+            <button class="keys" id="k3" onclick="appendtodisplay('1')">1</button>
+            <button class="keys" id="k4" onclick="appendtodisplay('0')">0</button>
+        </div>
+        <div class="column" >
+            <button class="keys" id="k1" onclick="appendtodisplay('*')">*</button>
+            <button class="keys" id="k2" onclick="appendtodisplay('5')">5</button>
+            <button class="keys" id="k3" onclick="appendtodisplay('2')">2</button>
+            <button class="keys" id="k4" onclick="appendtodisplay('.')">.</button>
+        </div>
+        <div class="column" >
+            <button class="keys" id="k1" onclick="appendtodisplay('/')">/</button>
+            <button class="keys" id="k2" onclick="appendtodisplay('6')">6</button>
+            <button class="keys" id="k3" onclick="appendtodisplay('3')">3</button>
+            <button class="keys" id="k4" onclick="Calculate()">=</button>
+        </div>
+        <div class="column">
+            <button class="keys" id="k1" onclick="Clear()">C</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
